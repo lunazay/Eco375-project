@@ -1,0 +1,87 @@
+Q1) Describe your data source below: 
+    - We using data from 137 countries sourced from multiple different sources such as the Economics Intelligence unit, Human Development report, World Bank.
+
+Q2) Please describe your idea by including a motivation and contribution statement
+    - Motivation: Generally, we are analyzing how specific national factors affect cryptocurrency adoption
+    - Contribution: We will extend the paper to test whether there is a combined difference between OECD member countries versus non-OECD member countries when considering 
+    the effect of education on cryptocurrency adoption among the countries. 
+
+Q3) Description of main outcome (Y)?
+    - Y: crypto-currency adoption
+
+Q4) Units of measurement for main outcome (Y)
+    - Unit of measurement: natural number, a scale from 0-10 indicating the level of cryptocurrency adoption. 
+
+Q5) Please give only the name, keeping it case-sensitive and without including any extra text (e.g., do not say: “our Y is testscr” or “Testscr” when the exact name is “testscr”)
+    - crypto_currency_adoption: C
+
+Q6) Main variable of interest (X)
+    - Education is the main variable of interest that we will analyze, we will be using inequality-adjusted education index from 2018. 
+
+Q7) Units of measurement for main variable of interest (X)
+    - index value from 0-1.
+
+Q8) Exact variable name of X in your group’s dataset
+    - Education: edu
+
+Q9) Population of interest: what is time period and location under study?
+    - Time period: 2020
+    - Location: countries of the world
+
+Q10 You will be given a chance to describe the data type further in the questions following this one. See Week 1-2 Lecture slides for more information on data structures.
+    - cross-sectional 
+
+Q11) Unit of observation in your data
+    - unit of observation is country
+
+Q12_A) Base article(s) for your project
+The base article is an article that most relates to your idea. You don't necessarily need to use the exact same data as this article (although you can), 
+but you should have an article that most informs your analysis and regression specifications. This assures that your regression specifications are anchored in 
+the existing economic theory in your area. One way to think about it: the base article is the one article that would be the most important to include in your literature review. If it makes sense that there is more than one article, please post with brief explanation.
+    - Bhimani, Alnoor, Kjell Hausken, and Sameen Arif. 2022. “Do National Development Factors Affect Cryptocurrency Adoption?” Technological Forecasting and Social Change 181 (May): 121739. https://doi.org/10.1016/j.techfore.2022.121739
+    [1-s2.0-S0040162522002657-main.pdf](https://app.crowdmark.com/text-attachments/2b998473-5d1f-4371-90f4-f81b9e1cb3fa)
+
+
+Q12_B) Is your data is sourced direct from a research article or book. You have sourced data for your project, which may be from an existing article(s) and/or directly sourced from data provider(s). Please indicate whether any part of your data is sourced direct from a research article?
+Please indicate the response that fits best:
+    - Dataset sourced from a research article but augmented with other data
+
+Q13- # NOT DONE
+If data is sourced from a research article or book, provide its citation and your relative contribution
+
+If you do not source any part of your data from an existing research article or book, state: N/A
+
+If your data sourced wholly or partly from a research article or book, please provide the reference below (this may be the same as your base article and if so, repeat the citation here). Below this citation, describe, specifically, how you will extend your analysis beyond the analysis reported in the research article.
+
+Please provide your citation in author-date Chicago citation style. You can see the author-date Chicago citation style here (scroll to "Journal Articles").
+
+
+Q14) Is your data sourced direct from data provider Is any part of your data directly sourced from a data provider?
+    - Multiple data points sourced / web scraped by you directly from one or more data providers
+
+Q15) If data is sourced direct from provider, provide a description. If your data sourced wholly or partly from a data provider: - # NOT DONE
+
+
+Q17) Run a regression of Y on X in your group’s dataset and note the sample size in this regression. Report this number below. Include only the numerical value 
+    - 130
+
+Q18) Run a regression of Y on X in your group’s dataset and note the estimated slope coefficient and standard error. Use as many decimal places as you think warranted.
+
+
+Q20) In your regression of Y on X interpret the estimated slope coefficient.
+Example answer: The estimated slope coefficient of -2.28 means that when comparing two districts with class sizes that differ by one student per class, the district with the larger class size has, on average, test scores that are lower by 2.28 points.
+Interpret the meaning of the estimated slope coefficient below:
+
+
+Q21) Statistical Significance: In your regression of Y on X in your group’s dataset, is the slope coefficient is statistically significant at the 5% significance level.
+
+Q22) Statistical Precision: In your regression of Y on X in your group’s dataset, discuss whether the slope coefficient is statistically significant by referring to the 
+    p-value and a 95% confidence interval. Comment on whether your estimate is precise.
+
+Q23) Economic Significance: In your regression of Y on X in your group’s dataset, discuss whether the slope coefficient is economically/practically significant.
+
+Q16) Upload your results PDF from GitHub
+Every time you commit a new submission in GitHub, a PDF of your results (scatter plot and regression) is automatically created. Please upload that PDF file here.
+
+Q24) Plans moving forward. If you’ve gotten all the way to this question, this means you have an analysis dataset and you can run a simple linear regression and interpret the results. 
+    This completes basic feasibility. Moving forward, what are your group’s plans for your project? Please describe these in 1 or 2 short paragraphs below.
