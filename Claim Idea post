@@ -1,0 +1,26 @@
+Claim Your Idea Post:
+Course project Pair 42: Education level and Cryptocurrency adoption among OECD vs non-OECD countries
+
+Idea
+Motivation: we are analyzing how specific national factors affect cryptocurrency adoption among different countries. 
+          Cryptocurrencies represent a brand-new decentralization model for money. They also help combat a currency's monopoly and free cash from control. 
+          No government organizations can set the coin's worthiness or flow, and regulation of cryptocurrency is very difficult. 
+          As a result we wanted to see if there are differentiating factors among countries that influence their adoption of it. 
+          Bhimani (2022) regressed 10 national factors to see how they would affect cryptocurrency adoption and found that education and HDI index had the highest correlation. 
+Contribution: We will extend the paper to test whether there is a combined difference between OECD member countries versus non-OECD member countries when considering 
+              the effect of education on cryptocurrency adoption among the countries.
+Data set(s)
+Data source: Our data is sourced from Chainanalysis. “The 2020 Geography of CryptoCurrency Report”. September 2020. Chainanalysis. 
+            https://www.chainalysis.com/blog/2020-global-cryptocurrency-adoption-index-2020/ Links to an external site.. 
+            And the education index data is gathered from the United Nations Development Programme. “ Human Development Report 2019”. 
+            https://hdr.undp.org/content/human-development-report-2019 Links to an external site.. 
+Time period: 2022
+Data Structure: Cross-sectional 
+Unit of Observation: Country
+Core relationship of interest
+The main outcome Y: crypto-currency adoption in a country. which is going to be measured on a scale from 0-10
+The main variable of interest X: Education is the main variable of interest that we will analyze, we will be using inequality-adjusted education index from 2018. 
+            It is going to be an index value from 0-1.
+Base article: Bhimani, Alnoor, Kjell Hausken, and Sameen Arif. 2022. “Do National Development Factors Affect Cryptocurrency Adoption?” Technological Forecasting and 
+            Social Change 181 (May): 121739. https://doi.org/10.1016/j.techfore.2022.121739
+ 
