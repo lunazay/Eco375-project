@@ -1,27 +1,40 @@
-use complete_regression_dataset.dta, clear
-// Set root folder variable to point to the root of the repository
-local root "/path/to/your/repository"
+// Define a variable ${root} which points to the root folder of the repository
+local root "/workspaces/Eco375-project"
 
-// Erase the existing YAM results file (if it exists)
+// Erase the existing YAML results file (if it exists)
 capture erase "${root}/results/phase2.yaml"
 
-// Load the dataset (modify the path to your dataset)
-use "${root}/data/raw/caschool.dta", clear
+// Load the dataset from the root directory
+use "${root}/complete_regression_dataset.dta", clear
 
-// Save a scatterplot of Y on X (modify 'Y' and 'X' to your specific variables)
-twoway scatter Y X, title("Scatterplot of Y on X")
+// Drop the first row which contains the variable names
+drop in 1
 
-// Run an OLS regression of Y on X
-reg Y X, robust
+rename B Crypt
+rename C Edu_score
+rename D OECD_dum
+
+destring Crypt Edu_score OECD_dum, replace
+
+// Save a scatterplot of Y on X (replace 'Y' and 'X' with actual variables)
+twoway scatter C Edu_score, title("Scatterplot of Cryptocurrency Adoption on Education Score")
+
+// Run an OLS regression of Y on X (replace 'testser' and 'str' with your actual variables)
+reg C Edu_score, robust
 
 // Display the number of observations
 display _N
 
-// Display the slope coefficient for X
-display _b[X]
+// Display the slope coefficient for Edu_score
+display _b[Edu_score]
 
-// Display the standard error of the slope coefficient for X
-display _se[X]
+// Display the standard error of the slope coefficient for Edu_score
+display _se[Edu_score]
 
-// Output the regression results in a YAML file (modify the path as necessary)
+// Output the regression results to a YAML file
 yamlout using "${root}/results/phase2.yaml"
+
+// Ensuring the paths are correctly used for keys
+key(ols num obs) value('= N')
+key(ols slope) value('= b[Edu_score]')
+key(ols slope se) value('= se[Edu_score]')
