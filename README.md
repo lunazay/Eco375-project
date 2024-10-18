@@ -1,7 +1,6 @@
 # Eco375-project
-The project description:
+
 Phase 2: Feasibility Plan
-Requirements:
 
 Welcome to Phase 2 of the course project: the Feasibility Plan. In this phase, your group will submit a more detailed plan for your project. 
 You will answer questions about your project (based on the Week 4 Phase 1 Checklist and the Claim Your Data and Idea template). 
