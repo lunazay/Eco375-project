@@ -66,19 +66,23 @@ Q17) Run a regression of Y on X in your group’s dataset and note the sample si
     - 130
 
 Q18) Run a regression of Y on X in your group’s dataset and note the estimated slope coefficient and standard error. Use as many decimal places as you think warranted.
-
+    - In a regression of cryptocurrency adoption score on education index, the slope coefficient is 0.152 with a standard  
+      error of 0.0729. 
 
 Q20) In your regression of Y on X interpret the estimated slope coefficient.
-Example answer: The estimated slope coefficient of -2.28 means that when comparing two districts with class sizes that differ by one student per class, the district with the larger class size has, on average, test scores that are lower by 2.28 points.
-Interpret the meaning of the estimated slope coefficient below:
+    - The estimated slope coefficeint of 0.152 means that a 1 unit increase in a country's education score is asscoaited   
+      with a 0.152 point increase in a country's cryptocurrency adoption score, which is measured on a scale from 0-1, on average.
 
 
-Q21) Statistical Significance: In your regression of Y on X in your group’s dataset, is the slope coefficient is statistically significant at the 5% significance level.
+Q21) Statistical Significance: In your regression of Y on X in your group’s dataset, is the slope coefficient is statistically significant at the 5% significance level. - Yes the t-stat is 0.039 ie, significant at the 5% level.
 
-Q22) Statistical Precision: In your regression of Y on X in your group’s dataset, discuss whether the slope coefficient is statistically significant by referring to the 
-    p-value and a 95% confidence interval. Comment on whether your estimate is precise.
+Q22) Statistical Precision: In your regression of Y on X in your group’s dataset, discuss whether the slope coefficient is statistically significant by referring to the  p-value and a 95% confidence interval. Comment on whether your estimate is precise.
+    - The estimated slope coefficient is statistically significant at the 5% level (0.152/0.0729=2.08>1.96) with a p-value of 0.039%. A 95% confidence interval is (0.0077315, 0.29629). This estimate is relatively precise; our confidence interval is comfortably away from zero, with 0.29629 as the closest bound on the interval estimate. 
 
 Q23) Economic Significance: In your regression of Y on X in your group’s dataset, discuss whether the slope coefficient is economically/practically significant.
+ex. Example answer (note: style of answer is context specific): The estimated slope coefficient of -2.28 is relatively small. For instance, the standard deviation of str in these data is 1.9, so a one standard deviation change in str would be a -4.33 difference in test scores. Meanwhile, a standard deviation in test scores is 19.1, so a 1 standard deviation difference in str is associated with only 23% of a standard deviation in test scores. In other words, a difference in class size that is large for these schools is associated with a relatively small difference in predicted test scores. Note: if you would like another example of explaining the economic significance here, look at the description in Section 4.2 (page 109) in Stock and Watson.
+
+    - The estimated slope coefficient of 0.152 is very large as we are measuring the crytocurrency adoption index score out of 1 therefore a 15% increase is sizeable. Additionally, the standard deviation is 0.0729 which is very small. It is also important to note that the OLS estimator line would be C= 0.152*Edu_score + 0.0386314. Therefore, on average the education level index score for non-OECD countries is 0.5273 whereas the education index score for OECD countries is 0.2819 points higher putting them at a score of 0.8092 out of 1, on average. This extremely large difference makes for a very big economical significance as OECD countries scored much higher compared to non-OECD countries. 
 
 Q16) Upload your results PDF from GitHub
 Every time you commit a new submission in GitHub, a PDF of your results (scatter plot and regression) is automatically created. Please upload that PDF file here.
