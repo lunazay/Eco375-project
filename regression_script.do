@@ -32,10 +32,7 @@ display _b[Edu_score]
 // Display the standard error of the slope coefficient for Edu_score
 display _se[Edu_score]
 
-// Output the regression results to a YAML file
-yamlout using "${root}/results/phase2.yaml"
-
-// Ensuring the paths are correctly used for keys
-key(ols num obs) value('= N')
-key(ols slope) value('= b[Edu_score]')
-key(ols slope se) value('= se[Edu_score]')
+// Output the regression results to a YAML file, more explicitly
+yamlout using "${root}/results/phase2.yaml", key(ols_num_obs) value('=N') replace
+yamlout using "${root}/results/phase2.yaml", key(ols_slope) value('=b[Edu_score]')
+yamlout using "${root}/results/phase2.yaml", key(ols_slope_se) value('=se[Edu_score]')
