@@ -5,7 +5,7 @@ setroot
 capture erase "${root}/results/phase2.yaml"
 
 // Load the dataset from the root directory
-use "${root}/complete_regression_dataset.dta", clear
+use "${root}/data/raw/complete_regression_dataset.dta", clear
 
 // Drop the first row which contains the variable names
 drop in 1
