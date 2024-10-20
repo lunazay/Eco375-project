@@ -1,5 +1,5 @@
 // Define a variable ${root} which points to the root folder of the repository
-local root "/workspaces/Eco375-project"
+global root "/workspaces/Eco375-project"
 
 // Erase the existing YAML results file (if it exists)
 capture erase "${root}/results/phase2.yaml"
@@ -18,10 +18,12 @@ rename D OECD_dum
 destring Crypt Edu_score OECD_dum, replace
 
 // Save a scatterplot of Y on X
-twoway scatter C Edu_score, title("Scatterplot of Cryptocurrency Adoption on Education Score")
+scatter Crypt Edu_score, ytitle("Cryptocurrency Index") xtitle("Education Index")
+graph export "${root}/results/scatter.pdf"
 
 // Run an OLS regression of Y on X (replace 'testser' and 'str' with your actual variables)
-reg C Edu_score, robust
+reg Crypt Edu_score, robust
+reg Crypt Edu_score, robust coeflegend
 
 // Display the number of observations
 display _N
