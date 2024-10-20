@@ -13,7 +13,7 @@ Q4) Units of measurement for main outcome (Y)
     - Unit of measurement: natural number, a scale from 0-10 indicating the level of cryptocurrency adoption. 
 
 Q5) Please give only the name, keeping it case-sensitive and without including any extra text (e.g., do not say: “our Y is testscr” or “Testscr” when the exact name is “testscr”)
-    - crypto_currency_adoption: C
+    - crypto_currency_adoption: Crypt
 
 Q6) Main variable of interest (X)
     - Education is the main variable of interest that we will analyze, we will be using inequality-adjusted education index from 2018. 
@@ -66,20 +66,19 @@ Q17) Run a regression of Y on X in your group’s dataset and note the sample si
     - 130
 
 Q18) Run a regression of Y on X in your group’s dataset and note the estimated slope coefficient and standard error. Use as many decimal places as you think warranted.
-    - In a regression of cryptocurrency adoption score on education index, the slope coefficient is 0.152 with a standard error of 0.0729. 
+    - In a regression of cryptocurrency adoption score on education index that is robust to standard error, the slope coefficient is 0.152 with a standard error of 0.06049. 
 
 Q20) In your regression of Y on X interpret the estimated slope coefficient.
-    - The estimated slope coefficeint of 0.152 means that a 1 unit increase in a country's education score is asscoaited with a 0.152 point increase in a country's cryptocurrency adoption score, which is measured on a scale from 0-1, on average.
+    - The estimated slope coefficient of 0.152 means that a 1-unit increase in a country's education score is associated with a 0.152-point increase in that country's cryptocurrency adoption score, which is measured on a scale from 0 to 1, on average.Alternatively, in terms of standard deviations, a 1 standard deviation increase in a country's education index (where the standard deviation of Edu_score is 0.215) is associated with a 0.033-point increase (0.152 * 0.215) in the cryptocurrency adoption score, measured on the same 0 to 1 scale, on average.
 
-Q21) Statistical Significance: In your regression of Y on X in your group’s dataset, is the slope coefficient is statistically significant at the 5% significance level. - Yes the t-stat is 0.039 ie, significant at the 5% level.
+Q21) Statistical Significance: In your regression of Y on X in your group’s dataset, is the slope coefficient is statistically significant at the 5% significance level. - Yes the t-stat is 0.013 ie, significant at the 5% level.
 
 Q22) Statistical Precision: In your regression of Y on X in your group’s dataset, discuss whether the slope coefficient is statistically significant by referring to the  p-value and a 95% confidence interval. Comment on whether your estimate is precise.
-    - The estimated slope coefficient is statistically significant at the 5% level (0.152/0.0729=2.08>1.96) with a p-value of 0.039%. A 95% confidence interval is (0.0077315, 0.29629). This estimate is relatively precise; our confidence interval is comfortably away from zero, with 0.29629 as the closest bound on the interval estimate. 
+    - The estimated slope coefficient is statistically significant at the 5% level (0.152/0.06049=2.51>1.96) with a p-value of 0.013%. A 95% confidence interval is (.0323 , 0.2717). This estimate is relatively precise; our confidence interval is comfortably away from zero, with 0.2717 as the closest bound on the interval estimate. 
 
 Q23) Economic Significance: In your regression of Y on X in your group’s dataset, discuss whether the slope coefficient is economically/practically significant.
-ex. Example answer (note: style of answer is context specific): The estimated slope coefficient of -2.28 is relatively small. For instance, the standard deviation of str in these data is 1.9, so a one standard deviation change in str would be a -4.33 difference in test scores. Meanwhile, a standard deviation in test scores is 19.1, so a 1 standard deviation difference in str is associated with only 23% of a standard deviation in test scores. In other words, a difference in class size that is large for these schools is associated with a relatively small difference in predicted test scores. Note: if you would like another example of explaining the economic significance here, look at the description in Section 4.2 (page 109) in Stock and Watson.
-
-    - The estimated slope coefficient of 0.152 is relatively large, as we are measuring the cryptocurrency adoption index score on a scale from 0 to 1. Therefore, a 15% increase in education score results in a sizeable increase in cryptocurrency adoption. Additionally, the standard deviation of the coefficient is 0.0729, which indicates low variability in the relationship between education and adoption scores across countries. The OLS regression line is given by C = 0.152 * Edu_score + 0.0386, meaning that for countries with very low education scores, the predicted cryptocurrency adoption score is approximately 0.0386. For OECD countries, the score is 0.152 points higher, giving them a predicted score of 0.1906. This is a notable increase, especially considering the analysis only includes education as a predictor. Education, therefore, makes a significant economic difference in cryptocurrency adoption, even when not accounting for other national developmental factors. 
+    - The estimated slope coefficient of 0.152 is relatively large, as we are measuring the cryptocurrency adoption index score on a scale from 0 to 1. Therefore, a 15% increase in education score results in a sizeable increase in cryptocurrency adoption. Additionally, the standard deviation of the coefficient is 0.0605, which indicates moderate variability in the relationship between education and adoption scores across countries. The OLS regression line is given by C = 0.152 * Edu_score + 0.0386, meaning that for countries with very low education scores, the predicted cryptocurrency adoption score is approximately 0.0386. Whereas for countries that have high education scores, their cryptocurrency adoption score is 0.152 points higher, giving them a predicted score of 0.1906. This is a notable increase, especially considering the analysis only includes education as a predictor. To provide a more realistic explanation of this data we can interpret it with a 
+    Education, therefore, makes a significant economic difference in cryptocurrency adoption, even when not accounting for other national developmental factors. 
 
 Q16) Upload your results PDF from GitHub
 Every time you commit a new submission in GitHub, a PDF of your results (scatter plot and regression) is automatically created. Please upload that PDF file here.
