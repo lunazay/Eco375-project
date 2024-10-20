@@ -10,13 +10,14 @@ use "${root}/complete_regression_dataset.dta", clear
 // Drop the first row which contains the variable names
 drop in 1
 
+// renaming the varibles to run regressions
 rename B Crypt
 rename C Edu_score
 rename D OECD_dum
 
 destring Crypt Edu_score OECD_dum, replace
 
-// Save a scatterplot of Y on X (replace 'Y' and 'X' with actual variables)
+// Save a scatterplot of Y on X
 twoway scatter C Edu_score, title("Scatterplot of Cryptocurrency Adoption on Education Score")
 
 // Run an OLS regression of Y on X (replace 'testser' and 'str' with your actual variables)
