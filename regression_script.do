@@ -1,5 +1,5 @@
 // Define a variable ${root} which points to the root folder of the repository
-global root "/workspaces/Eco375-project"
+setroot
 
 // Erase the existing YAML results file (if it exists)
 capture erase "${root}/results/phase2.yaml"
