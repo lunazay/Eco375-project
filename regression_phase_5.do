@@ -11,5 +11,5 @@ use "${root}/data/raw/complete_regression_dataset.dta", clear
 destring GDPCAP, replace force
 destring lnGDPCAP, replace force
 
-// Run an OLS regression of Y on X (replace 'testser' and 'str' with your actual variables)
-reg C GOVEFF lnEdu_score lnGDPCAP corruption rq PVestimate, robust
+// Run an OLS regression of Y on X
+reg C GOVEFF lnEdu_score lnGDPCAP corruption rq PVestimate
