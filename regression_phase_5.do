@@ -13,3 +13,6 @@ destring lnGDPCAP, replace force
 
 // Run an OLS regression of Y on X
 reg C GOVEFF lnEdu_score lnGDPCAP corruption rq PVestimate
+
+// to get the summary statistics of the key variables
+summarize C Edu_score lnEdu_score lnGDPCAP GOVEFF corruption VAestimate rq
