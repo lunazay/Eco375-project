@@ -11,8 +11,14 @@ use "${root}/data/raw/complete_regression_dataset.dta", clear
 destring GDPCAP, replace force
 destring lnGDPCAP, replace force
 
+//Run a simple regression
+reg C Edu_score
+
 // Run an OLS regression of Y on X
-reg C GOVEFF lnEdu_score lnGDPCAP corruption rq PVestimate
+reg C GOVEFF lnEdu_score lnGDPCAP corruption rq VA
 
 // to get the summary statistics of the key variables
-summarize C Edu_score lnEdu_score lnGDPCAP GOVEFF corruption VAestimate rq
+summarize C Edu_score lnEdu_score lnGDPCAP GOVEFF corruption VA rq
+
+// to get the correlation matrix
+ correlate C GOVEFF lnEdu_score lnGDPCAP corruption rq VA
